@@ -12,4 +12,8 @@ public interface UserService {
     List selectUsersFromDs();
 
     List selectUserFromDsGroup();
+
+    void addUserToSlave1(User user);
+
+    void addUserToSlave2(User user);
 }

@@ -48,14 +48,14 @@ spring:
           #druid: #这里可以重写默认值
             #initial-size: 5
             #public-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKUVA/IL/iON8f63bv2i/pIAK+1sXY228slLkTKrI9axwBMIoPV7+PqdRTv6uqMl3j6nei0EDBWEu/Wp/qOQ/ScCAwEAAQ==
-        slave_1:
+        two:
           username: root
           password: admin123456.COM
-          url: jdbc:mysql://172.16.55.10:13306/test2
+          url: jdbc:mysql://192.168.16.30:13306/test
           driver-class-name: com.mysql.jdbc.Driver
           #druid:
             #initial-size: 6
-        slave_2:
+        third:
           username: root
           password: admin123456.COM
           url: jdbc:mysql://172.16.55.10:13306/test3
@@ -63,3 +63,5 @@ spring:
 logging:
   level:
     com.baomidou: debug
+server:
+  port: 1220

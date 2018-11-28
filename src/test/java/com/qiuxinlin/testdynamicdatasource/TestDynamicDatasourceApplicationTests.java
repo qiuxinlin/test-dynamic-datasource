@@ -56,6 +56,22 @@ public class TestDynamicDatasourceApplicationTests {
     }
 
     @Test
+    public void addUserToSlave1() {
+        User user = new User();
+        user.setName("测试用户slave1" + random.nextInt());
+        user.setAge(random.nextInt(100));
+        userService.addUserToSlave1(user);
+    }
+
+    @Test
+    public void addUserToSlave2() {
+        User user = new User();
+        user.setName("测试用户slave2" + random.nextInt());
+        user.setAge(random.nextInt(100));
+        userService.addUserToSlave2(user);
+    }
+
+    @Test
     public void selectUsersFromDs() {
         userService.selectUsersFromDs();
     }
